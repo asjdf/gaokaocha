@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 import os
 import bs4
 import time
-# from apscheduler.schedulers.blocking import BlockingScheduler
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 def cha():
     attempts = 0
@@ -121,15 +119,6 @@ async def autoCha2(app: Mirai):
                 # ]) 
                 pass
 
-# @app.subroutine
-# async def start_stage_subroutine(app: Mirai):
-#     #创建调度器：BlockingScheduler
-#     # scheduler = BlockingScheduler()
-#     scheduler = AsyncIOScheduler()
-#     #添加任务,时间间隔10S
-#     scheduler.add_job(autoCha, 'interval', seconds=10, id='test_job1')
-#     scheduler.add_job(autoCha2, 'interval', seconds=10, id='test_job2')
-#     scheduler.start()
 if __name__ == "__main__":
     app.run()
     
