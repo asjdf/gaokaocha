@@ -69,7 +69,7 @@ async def GMHandler(app: Mirai, group:Group, message:MessageChain, member:Member
 @app.subroutine
 async def autoCha(app: Mirai):
     while True:
-        await asyncio.sleep(300)
+        await asyncio.sleep(1800)
         print("autoCha1:")
         cha1 = cha()
         print(cha)
@@ -95,7 +95,7 @@ async def autoCha(app: Mirai):
 @app.subroutine
 async def autoCha2(app: Mirai):
     while True:
-        await asyncio.sleep(30)
+        await asyncio.sleep(10)
         print("autoCha2:")
         cha1 = cha()
         print(cha)
